@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: notedly-inventory-api
+  datasource:
+    url: jdbc:postgresql://localhost:5432/inventory_db
+    username: postgres
+    password: your_secure_password # Update this with your local Postgres password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update # Auto-generates your database schema
+    show-sql: true     # Prints SQL to the console (great for verifying behavior during a demo)
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        '[format_sql]': true
