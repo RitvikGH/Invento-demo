@@ -4,7 +4,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/inventory_db
     username: postgres
-    password: your_secure_password # Update this with your local Postgres password
+    password: ${DB_password}
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
